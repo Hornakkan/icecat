@@ -1,0 +1,14 @@
+.hidden {
+    display: none !important;
+}
+
+#search-by, .button {
+    margin-top: 20px;
+}
+
+.credentials, .gtin, .brand, .icecat {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 10px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Icecat test integration</title>
+        <script src="https://live.icecat.biz/js/live-current-2.js"></script>
+    </head>
+
+    <body>
+        <div class="credentials">
+            <label for="username">Icecat Username</label>
+            <input type="text" name="username" id="username" placeholder="your icecat username" value="every-parts">
+        </div>
+
+        <select name="" id="search-by">
+            <option value="" selected disabled>-- Select --</option>
+            <option value="brand">Brand + Product Code</option>
+            <option value="gtin">GTIN code (EAN or UPC or JAN)</option>
+            <option value="icecat">Icecat Product Id</option>
+        </select>
+
+        <div class="gtin hidden">
+            <label for="gtin">GTIN code (EAN or UPC or JAN)</label>
+            <input type="text" id="gtin">
+        </div>
+
+        <div class="brand hidden">
+            <label for="brand">Brand</label>
+            <input type="text" id="brand">
+
+            <label for="code">Manufacturer Product Code</label>
+            <input type="text" id="code">
+        </div>
+
+        <div class="icecat hidden">
+            <label for="icecat-id">Icecat Product Id</label>
+            <input type="text" id="icecat-id">
+        </div>
+
+        <button class="button hidden">Search</button>
+
+        <div id="IcecatLive"></div>
+
+        <div class="response"></div>
+
+        <script src="icecat.js"></script>
+    </body>
+</html>
